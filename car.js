@@ -343,7 +343,7 @@ resize();
 
 window.addEventListener('resize', resize);
 
-const socket = io('https://car.pakastin.fi');
+const socket = io('http://localhost:8088');
 
 socket.on('connect', () => {
   sendParams(localCar);
